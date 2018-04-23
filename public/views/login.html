@@ -1,0 +1,20 @@
+
+<div  layout="row" layout-align="center">
+	<md-card flex-xs="100" flex="40">
+		<md-content layout-padding>
+			<p ng-show="error" style="color: red;">{{ error }}</p>
+			<form name="loginForm" ng-submit="submit()">
+				<md-input-container class="md-block">
+					<label>Login</label>
+					<input type="text" ng-model="login">
+				</md-input-container>
+				<md-input-container class="md-block">
+					<label>Senha</label>
+					<input type="password" ng-model="password">
+				</md-input-container>
+				<md-button type="submit" class="md-raised md-primary">Login</md-button>
+				<p>Você ainda não tem uma conta? <a ui-sref="signup">Cadastre-se agora!</a></p>
+			</form>
+		</md-content>
+	</md-card>
+</div>
